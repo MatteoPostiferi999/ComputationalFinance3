@@ -1,0 +1,31 @@
+[project]
+name = "assignment3-sabr-hedging"
+version = "0.1.0"
+description = "SABR and Bartlett delta hedging with real SPX option data"
+requires-python = ">=3.12"
+
+dependencies = [
+    "numpy>=2.4",
+    "pandas>=3.0",
+    "scipy>=1.17",
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.8",
+    "requests>=2.32",
+    "tqdm>=4.67",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=26.0",
+    "mypy-extensions>=1.1",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[build-system]
+requires = ["setuptools>=82"]
+build-backend = "setuptools.backends.legacy:build"

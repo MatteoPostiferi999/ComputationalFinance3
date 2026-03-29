@@ -1,0 +1,18 @@
+# Data files (troppo grandi per git)
+data/*.csv
+data/*.parquet
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Output generati
+*.log
